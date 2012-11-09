@@ -658,3 +658,472 @@
 #3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-11-07 17:04:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 17:05:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 17:05:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 17:20:42 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/View/Layouts/default.ctp, line 34]
+2012-11-07 17:20:42 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 34, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 34, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 17:20:50 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/View/Layouts/default.ctp, line 34]
+2012-11-07 17:20:50 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 34, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 34, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-07 17:22:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 17:24:52 Error: [MissingControllerException] Controller class VendorController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 17:25:31 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 17:25:56 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 17:26:41 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 17:26:56 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 17:26:56 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:05:26 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:05:30 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:05:55 Error: [MissingControllerException] Controller class KowhowController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 19:05:55 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:06:03 Error: [MissingControllerException] Controller class KnowhowController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-07 19:06:03 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:06:08 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:06:22 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:06:46 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:08:28 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:09:24 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:09:32 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:09:58 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:10:03 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:10:07 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:10:11 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:10:16 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:10:18 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:19:06 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:22:08 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:28:00 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:28:07 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:33:22 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:36:21 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:36:30 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-07 19:36:30 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-09 15:14:58 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:14:58 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:15:06 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:15:06 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:15:10 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:15:10 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:15:27 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:15:27 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:16:10 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:16:10 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:16:19 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:16:19 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:16:25 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 15:16:25 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 10:56:00 Error: Fatal Error (1): Call to undefined method PHPUnit_Framework_AssertionFailedError::getComparisonFailure() in [/Library/WebServer/Documents/cakephp223/lib/Cake/TestSuite/Reporter/CakeHtmlReporter.php, line 252]
+2012-11-09 10:56:00 Error: [FatalErrorException] Call to undefined method PHPUnit_Framework_AssertionFailedError::getComparisonFailure()
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Library/WebSer...', 252)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Library/WebSer...', 252, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Library/WebSer...', 252, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 10:56:13 Error: Fatal Error (1): Call to undefined method PHPUnit_Framework_AssertionFailedError::getComparisonFailure() in [/Library/WebServer/Documents/cakephp223/lib/Cake/TestSuite/Reporter/CakeHtmlReporter.php, line 252]
+2012-11-09 10:56:13 Error: [FatalErrorException] Call to undefined method PHPUnit_Framework_AssertionFailedError::getComparisonFailure()
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Library/WebSer...', 252)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Library/WebSer...', 252, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Library/WebSer...', 252, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 15:57:10 Error: [MissingActionException] Action AppController::Vendor() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-09 15:57:20 Error: [MissingTableException] Table knowhows for model Knowhow was not found in datasource default.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(3179): Model->setSource('knowhows')
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): Model->getDataSource()
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(28): Controller->paginate()
+#5 [internal function]: KnowhowsController->index()
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#7 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-11-09 15:57:34 Error: [MissingControllerException] Controller class KnowhowController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-09 15:57:50 Error: [MissingTableException] Table knowhows for model Knowhow was not found in datasource default.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(3179): Model->setSource('knowhows')
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): Model->getDataSource()
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(28): Controller->paginate()
+#5 [internal function]: KnowhowsController->index()
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#7 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-11-09 15:58:06 Error: [MissingTableException] Table categories for model Category was not found in datasource default.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(3179): Model->setSource('categories')
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): Model->getDataSource()
+#2 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(18): Model->find('list', Array)
+#3 [internal function]: Test2Controller->index()
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#7 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-11-09 16:12:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Category), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(18): Model->find('list', Array)
+#6 [internal function]: Test2Controller->index()
+#7 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#10 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-11-09 16:40:37 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 16:40:37 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 16:41:03 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 15]
+2012-11-09 16:41:03 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 15, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 15, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 17:01:06 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 16]
+2012-11-09 17:01:06 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 16, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 16, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 17:01:07 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 16]
+2012-11-09 17:01:07 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 16, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 16, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 18:45:27 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 90]
+2012-11-09 18:45:27 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 90, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 90, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 18:45:31 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 90]
+2012-11-09 18:45:31 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 90, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 90, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 18:53:21 Error: Fatal Error (1): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 27]
+2012-11-09 18:53:21 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use [] f...', '/Library/WebSer...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use [] f...', '/Library/WebSer...', 27, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use [] f...', '/Library/WebSer...', 27, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 18:53:41 Error: Fatal Error (1): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 27]
+2012-11-09 18:53:41 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use [] f...', '/Library/WebSer...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use [] f...', '/Library/WebSer...', 27, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use [] f...', '/Library/WebSer...', 27, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:29:00 Error: Fatal Error (64): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 20]
+2012-11-09 20:29:00 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Library/WebSer...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Library/WebSer...', 20, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Library/WebSer...', 20, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:30:16 Error: Fatal Error (1): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 35]
+2012-11-09 20:30:16 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use [] f...', '/Library/WebSer...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use [] f...', '/Library/WebSer...', 35, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use [] f...', '/Library/WebSer...', 35, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:39:47 Error: Fatal Error (4): parse error, expecting `T_STRING' or `T_VARIABLE' or `'{'' or `'$'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 18]
+2012-11-09 20:39:47 Error: [FatalErrorException] parse error, expecting `T_STRING' or `T_VARIABLE' or `'{'' or `'$''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 18, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 18, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:39:57 Error: Fatal Error (4): parse error, expecting `T_STRING' or `T_VARIABLE' or `'{'' or `'$'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 18]
+2012-11-09 20:39:57 Error: [FatalErrorException] parse error, expecting `T_STRING' or `T_VARIABLE' or `'{'' or `'$''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 18, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 18, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:41:23 Error: Fatal Error (1): Cannot use string offset as an array in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 20]
+2012-11-09 20:41:23 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Library/WebSer...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Library/WebSer...', 20, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Library/WebSer...', 20, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:41:47 Error: Fatal Error (1): Cannot use string offset as an array in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 20]
+2012-11-09 20:41:47 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Library/WebSer...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Library/WebSer...', 20, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Library/WebSer...', 20, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:42:54 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 20]
+2012-11-09 20:42:54 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 20, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 20, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:42:59 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 20]
+2012-11-09 20:42:59 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 20, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 20, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:48:07 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 24]
+2012-11-09 20:48:07 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 24, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 24, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:48:10 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 24]
+2012-11-09 20:48:10 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 24, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 24, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:49:30 Error: Fatal Error (64): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 24]
+2012-11-09 20:49:30 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Library/WebSer...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Library/WebSer...', 24, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Library/WebSer...', 24, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-09 20:49:34 Error: Fatal Error (64): Cannot use [] for reading in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 24]
+2012-11-09 20:49:34 Error: [FatalErrorException] Cannot use [] for reading
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Library/WebSer...', 24)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Library/WebSer...', 24, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Library/WebSer...', 24, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

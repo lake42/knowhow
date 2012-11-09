@@ -1,4 +1,9 @@
 <div class="knowhows index">
+<?php 
+
+//debug($tell); 
+print_r($knowhows);
+?>
 	<h2><?php echo __('Knowhows'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>

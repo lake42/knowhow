@@ -30,6 +30,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('tester');
+	//	echo $this->Html->script('/app/Vendor/js/tester2.js');		
+	//	debug($this->Html->script('/app/Vendor/js/tester2.js'));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

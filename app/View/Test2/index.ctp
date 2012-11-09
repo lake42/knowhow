@@ -16,18 +16,39 @@ echo $token . "<br>";
 
 echo $this->Form->create('Knowhow'); 
 $options  = $cats;
+$b = "<br>";
+//debug($catts);
+//var_dump($cats);
 
-print_r($cats);
+$catts = (array) $catts;
+$k = array_keys($catts);
+
+foreach ($catts as $k){
+//		echo "$k $value\n";
+//		print_r($value);
+		//echo $value->Category->type;
+debug($k);
+
+}
+
+print_r($k['type']);
+
+foreach($k['type'] as $y => $g){
+ echo $y .  $g . "\n";
+
+}
+
+//debug($catts);
 
 echo "<p></p>";
 //foreach ($options as $r){
 //}
 //$options = array('1'=>'one','2'=>'two', '3'=>'three', '4'=> 'four', '5'=>'five');
-$selected = array(2,5);
-echo $this->Form->select('category', array('options' => $options, 'selected' => $selected ));
+//$selected = array(2,5);
+//echo $this->Form->select('category', array('options' => $options, 'selected' => $selected ));
 
 //echo $kk;
-echo "<p></p>";
+//echo "<p></p>";
 //$keys = (array_keys[$options]);
 
 $keys = array_keys($cats);
@@ -37,14 +58,55 @@ $keys = array_keys($cats);
 <ul id="selects">
 
 <?php
+$i = 0;
 foreach ($cats as $key=>$value) { 
 //print_r($r);
-echo "<li><label for='". $value . "'>" . $value . $this->Form->checkbox('Category', array('value' => $key )) . "</label></li>\n";
+if( $i == 0) {
+echo "<li><label for='". $value . "'>" . $value . $this->Form->checkbox('Category', array( 'multiple' => 'checkbox', 'hiddenField' => false )) . "</label></li>\n";
+} else {
+
+echo "<li><label for='". $value . "'>" . $value . $this->Form->checkbox('Category', array( 'multiple' => 'checkbox', 'hiddenField' => false )) . "</label></li>\n";
+
+}
+$i++;
 }
 ?>
-	<?php echo $this->Form->end(__('Submit')); ?>
 
 <ul>
+<?php
+//debug($catts);
+/*
+echo $this->Form->input('type', array('type' => 'select', 'multiple' => 'checkbox','options' => array(
+                'client' => 'Client',
+                'vendor' => 'Vendor',
+                'employee' => 'Employee'
+            )
+         ));
+
+*/
+echo $this->Form->input('type', array('type' => 'select', 'multiple' => 'checkbox','options' => $cats));
+
+echo $this->Form->end(__('Submit'));
+/*
+$i = 0;
+
+foreach($selectedCategories as $selectedCategory)
+
+{
+
+$this->Selection->create();
+
+$this->data['Selection']['member_id'] = $selectedMembers[$i];
+
+$this->Selection->save($this->data);
+
+
+$i++;
+
+}
+
+*/
+?>
 
 <!--
 <fieldset>

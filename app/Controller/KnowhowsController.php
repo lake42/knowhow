@@ -24,8 +24,10 @@ class KnowhowsController extends AppController {
 		$cats = $this->Category->findAll();
 		$this->set('cats', $cats);
 		*/
+		$t = $this->params['form'];
 		$this->set('knowhows', $this->paginate());
-
+		$this->set('tell', $t);
+		
 	}
 
 /**
@@ -48,43 +50,28 @@ class KnowhowsController extends AppController {
  *
  * @return void
  */
-	public function add() {
+		public function add() {
 		$this->loadModel('Category');
 		$this->loadModel('KnowhowTransaction');
-		//	$this->set('vard',$this->request->data['Knowhow']['Category']);
-
-
+		$this->set('knowhows', $this->paginate());
+		// getting the category values to build the dropdown
 		$cats = $this->Category->find('list', array(
 		'fields' => array('id','cat_name'),				
 		));
-
-
+		// sending this to the view
 		$this->set('cats', $cats);
-/*		
-	while () {
-		$this->KnowhowTransaction->read(null,1);
-		
-		$this->KnowhowTransaction->set('kid','5');
-		$this->KnowhowTransaction->set('cid','2');
-		$this->KnowhowTransaction->save();
-		}
-*/
-
+		//we got the data - now put into the database
 		if ($this->request->is('post')) {
 			$this->Knowhow->create();
 			if ($this->Knowhow->save($this->request->data)) {
-			$tell = $this->request->data['Knowhow']['Category'];
-			//var vard;
-			$this->set('vard',$tell);
+			$tell = $this->request->data['Knowhow']['type'];
 
-//			if ($this->request->data['Knowhow']['Category']){
-//	while ($this->request->data['Knowhow']['Category']) {
-		$this->KnowhowTransaction->create();
-		$this->KnowhowTransaction->set('kid',$this->Knowhow->getInsertId());
-		$this->KnowhowTransaction->set('cid',$this->request->data['Knowhow']['Category']);
-		$this->KnowhowTransaction->save();
-//		}
-//		}
+			foreach($tell as $y => $g){
+				$this->KnowhowTransaction->create();
+				$this->KnowhowTransaction->set('kid',$this->Knowhow->getInsertId());
+				$this->KnowhowTransaction->set('cid',$g);
+				$this->KnowhowTransaction->save();
+			}
 
 				$this->Session->setFlash(__('This new knowledge has been saved'));
 				$this->redirect(array('action' => 'index'));

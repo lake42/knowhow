@@ -1,0 +1,10 @@
+app/
+
+Config/core.php - contains the salt values
+
+Config/database.php - contains the db connection info
+
+Config/routes.php - contain specific and default ruting info
+
+Config/acl.php - contains info related to the access control layer
+
