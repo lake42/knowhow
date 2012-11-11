@@ -4,4 +4,6 @@
 *.gif
 *.sublime-project
 *.sublime-workspace
+/Config/*
+/tmp/*
 

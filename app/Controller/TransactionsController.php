@@ -1,7 +1,9 @@
 <?php
 App::uses('AppController', 'Controller');
 App::uses('Category','Model');
-App::uses('KnowhowTransaction', 'Model');
+App::uses('Transaction', 'Model');
+App::uses('Knowhow', 'Model');
+
 
 
 /**
@@ -9,8 +11,7 @@ App::uses('KnowhowTransaction', 'Model');
  *
  * @property Knowhow $Knowhow
  */
-class KnowhowsController extends AppController {
-
+class TransactionsController extends AppController {
 		
 /**
  * index method
@@ -18,16 +19,8 @@ class KnowhowsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Knowhow->recursive = 0;
-		/*
-		
-		$cats = $this->Category->findAll();
-		$this->set('cats', $cats);
-		*/
-		$t = $this->params['form'];
-		$this->set('knowhows', $this->paginate());
-		$this->set('tell', $t);
-		
+		$this->Transaction->recursive = 0;
+		$this->set('transactions', $this->paginate());
 	}
 
 /**
@@ -43,8 +36,6 @@ class KnowhowsController extends AppController {
 			throw new NotFoundException(__('Invalid knowhow'));
 		}
 		$this->set('knowhow', $this->Knowhow->read(null, $id));
-
-	
 	}
 
 /**
@@ -53,7 +44,7 @@ class KnowhowsController extends AppController {
  * @return void
  */
 	public function add() {
-	//	$this->loadModel('Category');
+		$this->loadModel('Category');
 		$this->loadModel('KnowhowTransaction');
 		$this->set('knowhows', $this->paginate());
 		// getting the category values to build the dropdown
@@ -70,8 +61,8 @@ class KnowhowsController extends AppController {
 
 			foreach($tell as $y => $g){
 				$this->KnowhowTransaction->create();
-				$this->KnowhowTransaction->set('kid',$this->Knowhow->getInsertId());
-				$this->KnowhowTransaction->set('cid',$g);
+				$this->KnowhowTransaction->set('article_id',$this->Knowhow->getInsertId());
+				$this->KnowhowTransaction->set('cat_id',$g);
 				$this->KnowhowTransaction->save();
 			}
 

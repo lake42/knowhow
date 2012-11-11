@@ -5,9 +5,17 @@ App::uses('AppModel', 'Model');
  *
  */
 class Knowhow extends AppModel {
+	
+
+
 	var $name ='Knowhow';
 
-
+		public $hasMany = array(
+			'Category' => array(
+					'classname' => 'Category',
+				)
+		);
+			
 		public $validate = array(
 		'content' => array(
 			'notempty' => array(
