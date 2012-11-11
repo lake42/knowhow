@@ -6,9 +6,7 @@ App::uses('AppModel', 'Model');
  */
 class Knowhow extends AppModel {
 	
-
-
-	var $name ='Knowhow';
+	//var $name ='Knowhow';
 
 		public $hasMany = array(
 			'Category' => array(

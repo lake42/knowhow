@@ -54,26 +54,26 @@ class KnowhowsController extends AppController {
  */
 	public function add() {
 	//	$this->loadModel('Category');
-		$this->loadModel('KnowhowTransaction');
+	//	$this->loadModel('KnowhowTransaction');
 		$this->set('knowhows', $this->paginate());
 		// getting the category values to build the dropdown
-		$cats = $this->Category->find('list', array(
-		'fields' => array('id','cat_name'),				
-		));
+	//	$cats = $this->Category->find('list', array(
+	//	'fields' => array('id','cat_name'),				
+	//	));
 		// sending this to the view
-		$this->set('cats', $cats);
+	//	$this->set('cats', $cats);
 		//we got the data - now put into the database
 		if ($this->request->is('post')) {
 			$this->Knowhow->create();
 			if ($this->Knowhow->save($this->request->data)) {
-			$tell = $this->request->data['Knowhow']['type'];
+	//		$tell = $this->request->data['Knowhow']['type'];
 
-			foreach($tell as $y => $g){
-				$this->KnowhowTransaction->create();
-				$this->KnowhowTransaction->set('kid',$this->Knowhow->getInsertId());
-				$this->KnowhowTransaction->set('cid',$g);
-				$this->KnowhowTransaction->save();
-			}
+	//		foreach($tell as $y => $g){
+	//			$this->KnowhowTransaction->create();
+	//			$this->KnowhowTransaction->set('kid',$this->Knowhow->getInsertId());
+	//			$this->KnowhowTransaction->set('cid',$g);
+	//			$this->KnowhowTransaction->save();
+	//		}
 
 				$this->Session->setFlash(__('This new knowledge has been saved'));
 				$this->redirect(array('action' => 'index'));

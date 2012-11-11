@@ -1,6 +1,6 @@
 <?php
-debug($cats);
-var_dump($knowhows);
+//debug($cats);
+//var_dump($knowhows);
 ?>
 
 
@@ -45,9 +45,3 @@ echo $this->Form->input('type', array('type' => 'select', 'multiple' => 'checkbo
 	</ul>
 </div>
 
-
-<?php
-echo $this->Form->create(null, array(
-    'url' => 'http://www.google.com/search',
-    'type' => 'get'
-));
