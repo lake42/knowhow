@@ -1,7 +1,7 @@
 <div class="knowhows index">
 <?php 
 
-//debug($tell); 
+//debug($categories); 
 //print_r($knowhows);
 ?>
 	<h2><?php echo __('Knowhows'); ?></h2>

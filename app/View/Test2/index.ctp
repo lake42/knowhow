@@ -1,7 +1,7 @@
 <?php 
 //echo "ready!";
 
-echo $token . "<br>";
+//echo $token . "<br>";
 
 
 //get_object_vars(object $cats)
@@ -15,9 +15,11 @@ echo $token . "<br>";
 //echo $cats[0]->Category->id;
 
 echo $this->Form->create('Knowhow'); 
-$options  = $cats;
+$options  = $categories;
 $b = "<br>";
-//debug($catts);
+debug($list);
+debug($options);
+debug($art);
 //var_dump($cats);
 
 $catts = (array) $catts;
@@ -27,15 +29,18 @@ foreach ($catts as $k){
 //		echo "$k $value\n";
 //		print_r($value);
 		//echo $value->Category->type;
-debug($k);
+//debug($k);
 
 }
 
+/*
 print_r($k['type']);
 
-foreach($k['type'] as $y => $g){
- echo $y .  $g . "\n";
-
+*/
+foreach($list as $item){
+ //echo "listing --- " . $y .  $g . "<br>\n";
+ //echo $g->id;
+	echo $item['KnowhowTransaction']['cid'];
 }
 
 //debug($catts);
@@ -51,15 +56,15 @@ echo "<p></p>";
 //echo "<p></p>";
 //$keys = (array_keys[$options]);
 
-$keys = array_keys($cats);
+//$keys = array_keys($cats);
 ?>
 
 
-<ul id="selects">
 
+<ul id="selects">
 <?php
 $i = 0;
-foreach ($cats as $key=>$value) { 
+foreach ($categories as $key=>$value) { 
 //print_r($r);
 if( $i == 0) {
 echo "<li><label for='". $value . "'>" . $value . $this->Form->checkbox('Category', array( 'multiple' => 'checkbox', 'hiddenField' => false )) . "</label></li>\n";
@@ -84,30 +89,15 @@ echo $this->Form->input('type', array('type' => 'select', 'multiple' => 'checkbo
          ));
 
 */
-echo $this->Form->input('type', array('type' => 'select', 'multiple' => 'checkbox','options' => $cats));
-
-echo $this->Form->end(__('Submit'));
-/*
-$i = 0;
-
-foreach($selectedCategories as $selectedCategory)
-
-{
-
-$this->Selection->create();
-
-$this->data['Selection']['member_id'] = $selectedMembers[$i];
-
-$this->Selection->save($this->data);
-
-
-$i++;
-
-}
-
-*/
 ?>
-
+<ul id="2selects">
+<?php
+$ls="<li>";
+$le="</li>";
+echo $this->Form->input('type', array('type' => 'select', 'class'=> 'selects', 'multiple' => 'checkbox','options' => $categories));
+echo $this->Form->end(__('Submit'));
+?>
+</ul>
 <!--
 <fieldset>
 <legend>Check some boxes</legend>

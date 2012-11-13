@@ -3,51 +3,39 @@ App::uses('AppController', 'Controller');
 App::uses('Category', 'Model');
 App::uses('KnowhowTransaction', 'Model');
 App::uses('Knowhow', 'Model');
+App::uses('Article', 'Model');
+
 
 
 class Test2Controller extends AppController {
 
-public function index (){
+	public function index (){
+			$this->loadModel('Article');
+			$this->loadModel('Category');
+			$this->loadModel('KnowhowTransaction');
+			
+			$categories = $this->Category->getCatList();
+			$this->set('categories', $categories);
+			
+			$article = $this->Article->getArticle(3);
+			$this->set('art', $article);
 
-		$this->loadModel('Category');
-		$this->loadModel('KnowhowTransaction');
-		$cat = $this->Category->find('list', array(
-		'fields' => array('id','cat_name'),				
-		)
+			$audit = $this->KnowhowTransaction->getKnowCatJoin(3);
+			$this->set('list', $audit);
 
-		
-		);
-//				$k = $this->request->data[''];
+			if ($this->request->isPost()) {
 
-//		$selectedCategories = $this->request->data['Knowhow']['Type'][];
-/*		
-$selectedIds = array(); 
-foreach($this->request->data['Knowhow'] as $primary_key_id => $is_checked) {
-	debug('pkey=' . $primary_key_id . ' checked=' . $is_checked );
-if ($is_checked['id']) { 
-$selectedIds = $primary_key_id; 
-} 
-} 
-*/
-if ($this->request->isPost()) {
+			} else {}
+				$this->set('catts', $this->request->data);
+				$this->set('token', Inflector::tableize('Knowhow'));
+	}
 
-} else {
-   // $this->request->data['Knowhow']['Category'] = '';
-}
-		$this->set('catts', $this->request->data);
-//		$this->set('catts', 'yimsp');
-		//		$this->set('kk', $k);
-		$this->set('cats', $cat);
-		$this->set('token', Inflector::tableize('Knowhow'));
-}
-
-public function add(){
-//	$selectedCategories = $this->request->data['Knowhow']['Category'];
-		$this->loadModel('KnowhowTransaction');
-		$this->KnowhowTransaction->read(null,1);
-		$this->KnowhowTransaction->set();
-		$this->KnowhowTransaction->save();
-}
+	public function add(){
+			$this->loadModel('KnowhowTransaction');
+			$this->KnowhowTransaction->read(null,1);
+			$this->KnowhowTransaction->set();
+			$this->KnowhowTransaction->save();
+	}
 }
 
 
