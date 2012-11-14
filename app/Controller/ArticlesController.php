@@ -1,11 +1,15 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('Category','Model');
+App::uses('KnowhowTransaction', 'Model');
 /**
  * Articles Controller
  *
  * @property Article $Article
  */
 class ArticlesController extends AppController {
+
+public $components = array('Acl');
 
 /**
  * index method
@@ -25,6 +29,14 @@ class ArticlesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->loadModel('Category');
+	//	$this->loadModel('Article');
+		$this->loadModel('KnowhowTransaction');
+
+		$audit = $this->KnowhowTransaction->getKnowCatJoin($id);
+		$this->set('list', $audit);
+
+
 		$this->Article->id = $id;
 		if (!$this->Article->exists()) {
 			throw new NotFoundException(__('Invalid article'));
@@ -39,12 +51,13 @@ class ArticlesController extends AppController {
  */
 	public function add() {
 		$this->loadModel('Category');
-		$this->loadModel('Transaction');
-		$cats = $this->Category->find('list', array(
-		'fields' => array('id','cat_name'),				
-		));
+		$this->loadModel('KnowhowTransaction');
+		
+		// get category list for the dropdown menu
+		$cats = $this->Category->getCatList();
 		$this->set('cats', $cats);
-///
+
+		//check to see if we are posting, then ..
 		if ($this->request->is('post')) {
 			$this->Article->create();
 			if ($this->Article->save($this->request->data)) {

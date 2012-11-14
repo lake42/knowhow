@@ -1,3 +1,17 @@
+<?php 
+$gt = array();
+for ($y=0; $y<count($list); $y++){
+	$token ="";
+ 	$str = ($y<count($list)-1) ? ',' : '';
+$token = $list[$y]['Category'][0]['cat_name'] . $str;
+array_push($gt, $token);
+
+}
+//debug($gt);
+
+
+?>
+
 <div class="articles view">
 <h2><?php  echo __('Article'); ?></h2>
 	<dl>
@@ -36,6 +50,23 @@
 			<?php echo h($article['Article']['entry_time']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Categories'); ?></dt>
+		<dd>
+			<?php
+
+	//		 echo h($gt); 
+
+for ($y=0; $y<count($list); $y++){
+///	$token ="";
+ 	$str = ($y<count($list)-1) ? ', ' : '';
+echo $list[$y]['Category'][0]['cat_name'] . $str;
+//array_push($gt, $token);
+
+}
+
+			 ?>
+			&nbsp;
+		</dd>		
 	</dl>
 </div>
 <div class="actions">

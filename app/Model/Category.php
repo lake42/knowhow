@@ -8,15 +8,15 @@ App::uses('AppModel', 'Model');
  */
 class Category extends AppModel {
 
-	var $name = 'Category';
-
-/*
- 	public $belongsTo = array(
+    public $name = 'Category';
+	//public $actsAs = array('Containable');
+	public $primaryKey = 'id';
+ 	public $hasMany = array(
 
 		'KnowhowTransaction' => array(
 			'className' => 'KnowhowTransaction',
 			'foreignKey' => 'cid',
-			'dependent' => true,
+			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
@@ -26,11 +26,17 @@ class Category extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+	);
+/*
+	public $hasMany = array(
 		'Article' =>array(
 			'classname' => 'Article',
 			'foreignKey' => 'id'
 		)
-	);
+
+*/
+		
+//	);
 
 	// We specify the join table here because Cake would expect the table to be called genres_movies from this side
 /*
@@ -45,7 +51,7 @@ class Category extends AppModel {
 */
 public function getCatList(){
 		$cat = $this->find('list', array(
-		'fields' => array('id','cat_name'),				
+		'fields' => array('cat_name'),				
 		));
 		return $cat;
 	}

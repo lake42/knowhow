@@ -1,5 +1,5 @@
 <?php
-debug($cats);
+//debug($cats);
 //var_dump($knowhows);
 ?>
 

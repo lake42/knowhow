@@ -88,7 +88,7 @@ inner join `categories` on `categories.id` = `knowhow_transactions.cid`');
 		$this->loadModel('KnowhowTransaction');
 		$this->set('knowhows', $this->paginate());
 		// getting the category values to build the dropdown
-		$cats = $this->KnowhowTransaction->getCatNames();
+		$cats = $this->Category->getCatList();
 		// sending this to the view
 		$this->set('cats', $cats);
 		//we got the data - now put into the database

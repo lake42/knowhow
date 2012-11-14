@@ -2111,3 +2111,1148 @@
 #3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-11-13 02:56:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.contain' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 1, Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(60): Model->find('all', Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(3)
+#8 [internal function]: Test2Controller->index()
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#12 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-13 03:25:48 Error: Fatal Error (4): parse error, expecting `T_VARIABLE' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 19]
+2012-11-13 03:25:48 Error: [FatalErrorException] parse error, expecting `T_VARIABLE'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 19, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 19, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 03:27:13 Error: Fatal Error (4): parse error, expecting `T_VARIABLE' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 19]
+2012-11-13 03:27:13 Error: [FatalErrorException] parse error, expecting `T_VARIABLE'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 19, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 19, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 03:29:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.cid' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 03:29:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 03:37:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.recursive' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(58): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 15:30:46 Error: Fatal Error (4): parse error, expecting `')'' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 25]
+2012-11-13 15:30:46 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 25, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 25, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 15:31:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(60): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 15:31:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getKnowCatJoin' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getKnowCatJoin', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getKnowCatJoin', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getKnowCatJoin', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getKnowCatJoin', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): Model->__call('getKnowCatJoin', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 15:32:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getKnowCatJoin' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getKnowCatJoin', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getKnowCatJoin', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getKnowCatJoin', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getKnowCatJoin', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): Model->__call('getKnowCatJoin', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 15:32:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getKnowCatJoin' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getKnowCatJoin', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getKnowCatJoin', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getKnowCatJoin', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getKnowCatJoin', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): Model->__call('getKnowCatJoin', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 16:08:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Knowhow...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:09:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Knowhow...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:29:36 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 44]
+2012-11-13 16:29:36 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 44, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 44, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 16:30:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.category_id' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(59): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 16:31:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.category_id' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(59): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 16:32:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:32:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:32:52 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Library/WebServer/Documents/cakephp223/app/Model/Category.php, line 39]
+2012-11-13 16:32:52 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 39, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 39, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 16:33:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:34:17 Error: Fatal Error (4): parse error, expecting `')'' in [/Library/WebServer/Documents/cakephp223/app/Model/Category.php, line 28]
+2012-11-13 16:34:17 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 28, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 28, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 16:34:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:35:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:35:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:36:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(55): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:48:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:48:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.article_id' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:52:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(KnowhowTransaction), 'SELECT `Article...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(KnowhowTransaction), Object(Article), 'hasMany', 'Article', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(48): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:52:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(KnowhowTransaction), 'SELECT `Article...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(KnowhowTransaction), Object(Article), 'hasMany', 'Article', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(48): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:53:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Article.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(KnowhowTransaction), 'SELECT `Article...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(KnowhowTransaction), Object(Article), 'hasMany', 'Article', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(48): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 16:56:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoryid' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(KnowhowTransaction), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(KnowhowTransaction), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(48): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 17:00:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$id' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Knowhow...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 17:00:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$id AND `KnowhowTransaction`.`kid` = (2)' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Knowhow...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(57): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(20): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 17:19:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.category_id' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(50): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 17:19:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.category_id' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(50): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(23): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 17:30:34 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 56]
+2012-11-13 17:30:34 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 56, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 56, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 17:38:24 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 52]
+2012-11-13 17:38:24 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 52, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 52, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 17:38:46 Error: Fatal Error (1): Cannot use string offset as an array in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 43]
+2012-11-13 17:38:46 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Library/WebSer...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Library/WebSer...', 43, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Library/WebSer...', 43, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:48:07 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 17]
+2012-11-13 18:48:07 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:49:41 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 17]
+2012-11-13 18:49:41 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:52:21 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 17]
+2012-11-13 18:52:21 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 17, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:53:19 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 11]
+2012-11-13 18:53:19 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 11, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 11, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:53:24 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 11]
+2012-11-13 18:53:24 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 11, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 11, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:56:10 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 7]
+2012-11-13 18:56:10 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:56:28 Error: Fatal Error (1): Call to a member function getArticle() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 10]
+2012-11-13 18:56:28 Error: [FatalErrorException] Call to a member function getArticle() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 10, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 10, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:56:54 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 7]
+2012-11-13 18:56:54 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:57:43 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 7]
+2012-11-13 18:57:43 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:57:54 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 7]
+2012-11-13 18:57:54 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:58:28 Error: Fatal Error (1): Call to a member function getCatList() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 7]
+2012-11-13 18:58:28 Error: [FatalErrorException] Call to a member function getCatList() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 7, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 18:58:55 Error: Fatal Error (1): Call to a member function getArticle() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 13]
+2012-11-13 18:58:55 Error: [FatalErrorException] Call to a member function getArticle() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 13, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 13, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:11:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 45]
+2012-11-13 19:11:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 45, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 45, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:11:53 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 46]
+2012-11-13 19:11:53 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 46, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 46, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:12:06 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 46]
+2012-11-13 19:12:06 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 46, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 46, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:17:31 Error: Fatal Error (1): Class 'Category' not found in [/Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php, line 11]
+2012-11-13 19:17:31 Error: [FatalErrorException] Class 'Category' not found
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'Category...', '/Library/WebSer...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Category...', '/Library/WebSer...', 11, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Category...', '/Library/WebSer...', 11, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:25:10 Error: Fatal Error (1): Cannot use string offset as an array in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 43]
+2012-11-13 19:25:10 Error: [FatalErrorException] Cannot use string offset as an array
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Library/WebSer...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Library/WebSer...', 43, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Library/WebSer...', 43, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:28:06 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 54]
+2012-11-13 19:28:06 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 54, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 54, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:29:13 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 55]
+2012-11-13 19:29:13 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 55, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 55, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:29:56 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 55]
+2012-11-13 19:29:56 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 55, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 55, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:30:15 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 57]
+2012-11-13 19:30:15 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 57, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 57, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:37:21 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 57]
+2012-11-13 19:37:21 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 57, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 57, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:37:40 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 57]
+2012-11-13 19:37:40 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 57, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 57, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:37:51 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 57]
+2012-11-13 19:37:51 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 57, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 57, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:42:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.cat_name' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Knowhow...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(KnowhowTransaction), 'hasMany', 'KnowhowTransact...', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(61): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 19:50:12 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 50]
+2012-11-13 19:50:12 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 50, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 50, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 19:50:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(66): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 19:51:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(66): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:30:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.kid' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(52): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:31:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kid' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(51): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:32:13 Error: Fatal Error (4): parse error, expecting `')'' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 50]
+2012-11-13 20:32:13 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 50, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 50, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 20:33:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'kid' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(52): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:45:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(54): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:45:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(54): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:45:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(54): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 20:55:18 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 43]
+2012-11-13 20:55:18 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 43, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 43, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 20:58:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Knowhow...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Knowhow...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Knowhow...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(KnowhowTransaction), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php(44): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(17): KnowhowTransaction->getKnowCatJoin(3)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 21:07:55 Error: Fatal Error (4): parse error, expecting `')'' in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 87]
+2012-11-13 21:07:55 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Library/WebSer...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Library/WebSer...', 87, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Library/WebSer...', 87, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 21:08:30 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'knowhow.knowhowtransaction' doesn't exist
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(66): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 21:09:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(66): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 21:10:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.kid' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(66): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-13 21:54:33 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/Article.php, line 88]
+2012-11-13 21:54:33 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 88, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 88, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-13 22:19:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'KnowhowTransaction.cid' in 'where clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1340): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1202): DboSource->fetchAssociated(Object(Article), 'SELECT `Categor...', Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(Article), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(86): Model->find('all', Array)
+#8 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#9 [internal function]: Test2Controller->index()
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#13 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-11-13 22:24:54 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 48]
+2012-11-13 22:24:54 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 48, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 48, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-14 03:53:28 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-14 03:58:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(93): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 03:58:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(93): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 03:58:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(93): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 04:03:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Article...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Article...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Article...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Article), Array)
+#5 /Library/WebServer/Documents/cakephp223/app/Model/Article.php(93): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/Test2Controller.php(14): Article->getArticle(2)
+#7 [internal function]: Test2Controller->index()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(Test2Controller), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test2Controller), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 04:17:44 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 25]
+2012-11-14 04:17:44 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Library/WebSer...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Library/WebSer...', 25, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Library/WebSer...', 25, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-14 04:17:47 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Library/WebServer/Documents/cakephp223/app/View/Test2/index.ctp, line 25]
+2012-11-14 04:17:47 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Library/WebSer...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Library/WebSer...', 25, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Library/WebSer...', 25, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-14 15:21:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.cid' in 'on clause'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Category), Array)
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Library/WebServer/Documents/cakephp223/app/Controller/CategoriesController.php(18): Controller->paginate()
+#8 [internal function]: CategoriesController->index()
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-14 15:27:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getCatNames' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getCatNames', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getCatNames', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getCatNames', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getCatNames', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): Model->__call('getCatNames', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): KnowhowTransaction->getCatNames()
+#7 [internal function]: KnowhowsController->add()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 15:28:16 Error: Fatal Error (4): parse error in [/Library/WebServer/Documents/cakephp223/app/Model/KnowhowTransaction.php, line 58]
+2012-11-14 15:28:16 Error: [FatalErrorException] parse error
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'parse error', '/Library/WebSer...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Library/WebSer...', 58, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Library/WebSer...', 58, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-14 15:29:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getCatNames' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getCatNames', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getCatNames', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getCatNames', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getCatNames', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): Model->__call('getCatNames', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): KnowhowTransaction->getCatNames()
+#7 [internal function]: KnowhowsController->add()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 15:29:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getCatNames' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getCatNames', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getCatNames', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getCatNames', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getCatNames', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): Model->__call('getCatNames', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): KnowhowTransaction->getCatNames()
+#7 [internal function]: KnowhowsController->add()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 15:31:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getCatList' at line 1
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('getCatList', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getCatList', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getCatList', Array, Array)
+#4 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(784): DboSource->query('getCatList', Array, Object(KnowhowTransaction))
+#5 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): Model->__call('getCatList', Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(91): KnowhowTransaction->getCatList()
+#7 [internal function]: KnowhowsController->add()
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 15:35:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '*' in 'field list'
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(459): PDOStatement->execute(Array)
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(425): DboSource->_execute('SELECT `*` FROM...', Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `*` FROM...', Array, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Datasource/DboSource.php(538): DboSource->fetchAll('SELECT `*` FROM...')
+#4 [internal function]: DboSource->query('SELECT `*` FROM...')
+#5 /Library/WebServer/Documents/cakephp223/lib/Cake/Model/Model.php(2996): call_user_func_array(Array, Array)
+#6 /Library/WebServer/Documents/cakephp223/app/Controller/KnowhowsController.php(51): Model->query('SELECT `*` FROM...')
+#7 [internal function]: KnowhowsController->view('4')
+#8 /Library/WebServer/Documents/cakephp223/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(KnowhowsController), Array)
+#9 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(KnowhowsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-11-14 15:41:01 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Library/WebServer/Documents/cakephp223/app/Controller/ArticlesController.php, line 65]
+2012-11-14 15:41:01 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Error/ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Library/WebSer...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Library/WebSer...', 65, Array)
+#2 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Library/WebSer...', 65, Array)
+#3 /Library/WebServer/Documents/cakephp223/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-14 21:35:37 Error: [MissingControllerException] Controller class Test3Controller could not be found.
+#0 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-14 21:36:18 Error: [MissingActionException] Action AclprepController::index() could not be found.
+#0 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Library/WebServer/Documents/cakephp223/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(Test3Controller), Object(CakeRequest), Object(CakeResponse))
+#2 /Library/WebServer/Documents/cakephp223/app/webroot/index.php(95): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

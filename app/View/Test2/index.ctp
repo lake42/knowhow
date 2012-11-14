@@ -17,9 +17,21 @@
 echo $this->Form->create('Knowhow'); 
 $options  = $categories;
 $b = "<br>";
-debug($list);
-debug($options);
-debug($art);
+//debug($options);
+print_r($list);
+ echo count($list);
+ for ($y=0; $y<count($list); $y++){
+ 	$str = ($y<count($list)-1) ? ',' : '';
+echo $list[$y]['Category'][0]['cat_name'] . $str;
+//while ($y<count($list)){ echo ","; }
+}
+/*
+foreach($list as $k => $v){
+	echo $list[0]['KnowhowTransaction'][$k] . "===<br>";
+	//echo $k;
+}
+*/
+//debug($article);
 //var_dump($cats);
 
 $catts = (array) $catts;
@@ -37,11 +49,11 @@ foreach ($catts as $k){
 print_r($k['type']);
 
 */
-foreach($list as $item){
+//foreach($list as $item){
  //echo "listing --- " . $y .  $g . "<br>\n";
  //echo $g->id;
-	echo $item['KnowhowTransaction']['cid'];
-}
+//	echo $item['KnowhowTransaction']['cid'];
+//}
 
 //debug($catts);
 
